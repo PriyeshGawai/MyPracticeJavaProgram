@@ -28,3 +28,17 @@ public class FancyPattern3 {
 	}
 
 }
+
+/*==============
+Enter size::: 
+8
+A
+ABA
+ABCBA
+ABCDCBA
+ABCDEDCBA
+ABCDEFEDCBA
+ABCDEFGFEDCBA
+ABCDEFGHGFEDCBA
+
+*/
