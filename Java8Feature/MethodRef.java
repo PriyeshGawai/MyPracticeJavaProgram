@@ -1,4 +1,4 @@
-package Java8Feature;
+package java8Feature;
 
 @FunctionalInterface
 interface MyInter{

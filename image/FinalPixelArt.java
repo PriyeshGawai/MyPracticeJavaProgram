@@ -19,7 +19,7 @@ public class FinalPixelArt {
             BufferedImage image = ImageIO.read(new File("E:\\img2.jpg")); // Change path if needed
 
             // === 2. Auto Resize to fit console ===
-            int targetWidth = 120; // Adjust depending on console size
+            int targetWidth = 80; // Adjust depending on console size
             int targetHeight = (int)((double)image.getHeight() / image.getWidth() * targetWidth / 2); // /2 for aspect ratio
 
             Image tmp = image.getScaledInstance(targetWidth, targetHeight, Image.SCALE_SMOOTH);
@@ -43,7 +43,7 @@ public class FinalPixelArt {
                     int b = pixel & 0xff;
                    
                  // === Darken the image ===
-                    int gray = (int)((r + g + b) / 3 * 1); //0.8 reduce brightness by 20%
+                    int gray = (int)((r + g + b) / 3 *1); //0.8 reduce brightness by 20%
                     if (gray > 255) gray = 255;
                     if (gray < 0) gray = 0;
 
@@ -69,13 +69,13 @@ public class FinalPixelArt {
             char asciiArt[] = FigletFont.convertOneLine(msg).toCharArray();
             System.out.println();
             out.println();
-          for(char s: asciiArt) {
-        	
-        	  System.out.print(s);
-              out.print(s);  
-          }
-//            System.out.println(asciiArt);
-//            out.println(asciiArt);
+//          for(char s: asciiArt) {
+//        	
+//        	  System.out.print(s);
+//              out.print(s);  
+//          }
+            System.out.println(asciiArt);
+            out.println(asciiArt);
 
             //System.out.println("\n✔ Pixel Art with Tribute Saved to E:\\ambedkar_tribute_art.txt");
 
