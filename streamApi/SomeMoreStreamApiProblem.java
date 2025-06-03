@@ -107,6 +107,7 @@ public class SomeMoreStreamApiProblem {
 		double avgSal  = emp.stream().collect(Collectors.averagingDouble(Employee::getSalary));
 		double avgSal2  = emp.stream().collect(Collectors.summingDouble(Employee::getSalary));
 		
+		
 		System.out.println("avgSal::"+avgSal+" :: "+avgSal2);
 		
 		
