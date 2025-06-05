@@ -2,6 +2,7 @@ package DSA;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -26,6 +27,13 @@ public class FindOccAndPossition {
 		System.out.println(map.toString());
 		map.forEach((k,v)->System.out.println(k+" "+v));
 		//map.forEach(System.out::println);
+		
+		Iterator<Map.Entry<Integer, List<Integer>>> m= map.entrySet().iterator();
+		while (m.hasNext()) {
+			Map.Entry<Integer,List<Integer>> v=m.next();
+			
+			System.out.println(v.getKey() +"  "+v.getValue());
+		}
 	}
 
 }
