@@ -12,9 +12,9 @@ public class StringJoinerClass {
 		sj.add("Java 8");
 		sj.add("feature");
 		
-		System.out.println(sj);
+		System.out.println(sj); //Priyesh_Learning_Java 8_feature
 		
-		StringJoiner sj2=new StringJoiner("_", "(",")");
+		StringJoiner sj2=new StringJoiner("_", "(",")"); //(Priyesh_Learning_Java 8_feature)
 		sj2.add("Priyesh");
 		sj2.add("Learning");
 		sj2.add("Java 8");

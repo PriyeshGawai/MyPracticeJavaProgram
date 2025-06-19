@@ -17,6 +17,8 @@ public class PredicateDemo3 {
 		
 		Predicate<Person> p=n ->n.age >=18;
 		
+		//Predicate<Person> p=n ->n.age >=18 && n.name.charAt(0)=='A';
+		
 		List<Person> l1=Arrays.asList(p1,p2,p3,p4,p5);
 		
 		for(Person per : l1) {

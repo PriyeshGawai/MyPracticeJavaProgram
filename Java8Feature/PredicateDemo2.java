@@ -17,3 +17,11 @@ public class PredicateDemo2 {
 	}
 
 }
+
+
+/*
+ * =========OUTPUT
+ * Baban
+ * Babu
+ * 
+ */
