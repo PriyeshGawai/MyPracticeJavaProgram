@@ -9,6 +9,8 @@ public class HashMapDEmo {
 	public static void main(String[] args) {
 		//HashMap<String, Integer> hm= new HashMap<String, Integer>();
 		LinkedHashMap<String, Integer> hm= new LinkedHashMap<String, Integer>(10, 1.2f, true);
+		
+		System.out.println(hm);
 		hm.put("Apple", 10);
 		hm.put("Banana", 20);
 		hm.put("chiku", 5);
@@ -19,6 +21,7 @@ public class HashMapDEmo {
 		for(Map.Entry<String, Integer> entry: hm.entrySet()) {
 			System.out.println(entry.getKey()+  " "+entry.getValue());
 		}
+		
 		
 	}
 
